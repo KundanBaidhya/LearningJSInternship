@@ -16,3 +16,7 @@ console.log(b+c);
 const cars= ["toyota", "honda", ,"hyundai", "MG"];
 console.log(cars[0]);
 console.log(cars);
+
+//using special charecters in a string
+let sen = "this is a line \n and this should be in another line \t and this should be tabbed";
+console.log(sen);
