@@ -4,4 +4,4 @@ functions and arrays too as a value*/
 
 const person = {name: "Kundan", age: 21, greet: function(){return 'hey Im ' + this.name}};
 
-console.log(person.name, person.age, person.greet());
+console.log(person.name, person.age, person.greet()); 
