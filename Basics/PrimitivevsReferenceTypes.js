@@ -18,4 +18,4 @@ const persontwo = personone;
 personone.fname="Shristi";
 personone.lname="Awal";
 
-console.log(persontwo);
+console.log(persontwo); 
