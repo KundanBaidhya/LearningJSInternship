@@ -1,3 +1,6 @@
+//promises wrap around a piece of asyncronous code and returns a resolve or a reject
+//as a value such that other synchronous code doesn't have to wait
+
 //walk the dog
 //clean the kitchen
 //throw out the trash
@@ -49,7 +52,7 @@ function throwTrash(){
     })
 }
 
-walkDog().then(value => {console.log(value); return cleanKitchen()})
-         .then(value => {console.log(value); return throwTrash()})
+walkDog().then(value => {console.log(value); return cleanKitchen()})//the value is overwritten every time the then function
+         .then(value => {console.log(value); return throwTrash()})//calls another function.
          .then(value => {console.log(value)})
          .catch(value => console.log(value));
