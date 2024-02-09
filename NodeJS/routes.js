@@ -9,7 +9,7 @@ const requestHandler=(req, res)=>{
     if(url==="/"){//checks if the url is just / and if the url is a string then if it's true executes the following code.
         res.setHeader('contentType', 'text/html');//setting the header as contentType and the format as html in the response object.
         res.write('<html>');//sending the html file to be rendered in the browser.
-        res.write('<head><title>My Server</title><head>');
+        res.write('<head><title>My Server</title></head>');
         res.write("<body><form action='/message' method='POST'><input type='text' name='message'><button type='Submit'>weeee</button></form><body>");
         res.write('</html>');
         return res.end();
