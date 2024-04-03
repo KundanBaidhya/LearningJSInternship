@@ -1,0 +1,32 @@
+<%- include('includes/head.ejs') %>
+    
+    <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <% if(prods.length > 0) { %>
+            <div class="grid">
+                <% for (let products of prods) { %>                
+                    <article class="card product-item">
+                        <header class="card__header">
+                            <h1 class="product__title"><%= products.title  %></h1>
+                        </header>
+                        <div class="card__image">
+                            <img src="https://th.bing.com/th/id/OIP.HRToSgTwVvc3Y8ecfWLpegHaE8?w=2500&h=1667&rs=1&pid=ImgDetMain"
+                                alt="A Book">
+                        </div>
+                        <div class="card__content">
+                            <h2 class="product__price"> $19.99</h2>
+                            <p class="product__description">This is a really good book on something that you really really
+                                need to know.</p>
+                        </div>
+                        <div class="card__actions">
+                            <button class="btn">Add to cart</button>
+                        </div>
+                    </article>
+                <% } %>    
+            </div>
+        <% } else{ %>
+            <h1>No items in product</h1>
+        <% } %>
+    </main>
+<%- include('includes/end.ejs') %>
